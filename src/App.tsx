@@ -103,7 +103,7 @@ function Intro({ nextPage }: { nextPage: Function }) {
   return (
     <div className="flex flex-col items-center mt-8">
       <h1 className="text-2xl font-bold mb-8">Welcome to the treasure hunt!</h1>
-      <div className="flex flex-col items-center gap-4 text-base text-center ml-8">
+      <div className="flex flex-col items-center gap-4 text-base text-center">
         <p>We've hidden rabbits throughout the office.</p>
         <p>Each rabbit has a code for you that you can enter here to get your next clue.</p>
         <p>There's a <span className="font-semibold">big surprise</span> waiting for you at the end!</p>
