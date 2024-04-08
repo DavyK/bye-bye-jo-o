@@ -1,7 +1,7 @@
 {
   "name": "bye-bye-joao",
   "version": "0.1.0",
-  "homepage": "https://davyk.github.io/bye-bye-jo-o/",
+  "homepage": "https://lookunderyourrabbit.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
