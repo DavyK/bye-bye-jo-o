@@ -1,19 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.bbe7eb68.css",
-    "main.js": "/static/js/main.81707635.js",
+    "main.css": "/static/css/main.142b6a65.css",
+    "main.js": "/static/js/main.71cbe460.js",
     "static/js/453.d2178763.chunk.js": "/static/js/453.d2178763.chunk.js",
+    "static/media/washing-up.mov": "/static/media/washing-up.f16abf817d9efd792213.mov",
     "static/media/fashionShow.mov": "/static/media/fashionShow.fc221f1f304b3adb2564.mov",
+    "static/media/ducks.png": "/static/media/ducks.a422c09fb9bee6fe751f.png",
     "static/media/juliette.jpg": "/static/media/juliette.2fd6bf3eea8824c1292e.jpg",
+    "static/media/spikeball.jpg": "/static/media/spikeball.f8468a3076d11c1c6446.jpg",
+    "static/media/in-loving-memory.jpg": "/static/media/in-loving-memory.6e5e4e08e2a1c54169ca.jpg",
+    "static/media/poolTable.jpg": "/static/media/poolTable.57583ddefbc4091cb12a.jpg",
+    "static/media/toilet.jpg": "/static/media/toilet.6bc518a6e7d1589cc54b.jpg",
+    "static/media/toby.jpg": "/static/media/toby.2d0dee93ce4987bbeb3b.jpg",
+    "static/media/thats-a-choppin.jpg": "/static/media/thats-a-choppin.845cf8e8584a0546c567.jpg",
     "static/media/evil-bunny.jpg": "/static/media/evil-bunny.f36bf4765e485b7e71cc.jpg",
     "static/media/rabbit.svg": "/static/media/rabbit.5ea008286c2f377a4d11fe5b3739ac0d.svg",
     "index.html": "/index.html",
-    "main.bbe7eb68.css.map": "/static/css/main.bbe7eb68.css.map",
-    "main.81707635.js.map": "/static/js/main.81707635.js.map",
+    "main.142b6a65.css.map": "/static/css/main.142b6a65.css.map",
+    "main.71cbe460.js.map": "/static/js/main.71cbe460.js.map",
     "453.d2178763.chunk.js.map": "/static/js/453.d2178763.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbe7eb68.css",
-    "static/js/main.81707635.js"
+    "static/css/main.142b6a65.css",
+    "static/js/main.71cbe460.js"
   ]
 }
