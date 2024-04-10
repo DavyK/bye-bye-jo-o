@@ -320,6 +320,7 @@ function App() {
           />
         ))}
         <RabbitIcon
+          current={currentPage === 'last'}
           completed={allAnswered}
           onClick={() => {
             setCurrentPage('last');
