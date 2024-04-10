@@ -115,7 +115,7 @@ function RabbitIcon(props: any) {
     <button 
       onClick={props.onClick}
       disabled={!props.completed}
-      className="border-solid border-1 shadow-md border-grey-50 rounded-full p-1"
+      className={cx("border-solid border shadow-md rounded-full p-1", props.current ? "border-[#7fbe7f]" : "border-gray-100")}
     >
       <BaseRabbitIcon
         style={{
@@ -302,6 +302,7 @@ function App() {
         {pages.slice(0,6).map((page) => (
           <RabbitIcon
             completed={answered.includes(page)}
+            current={currentPage === page}
             onClick={() => {
               setCurrentPage(page);
             }}
@@ -312,6 +313,7 @@ function App() {
         {pages.slice(6).map((page) => (
           <RabbitIcon
             completed={answered.includes(page)}
+            current={currentPage === page}
             onClick={() => {
               setCurrentPage(page);
             }}
