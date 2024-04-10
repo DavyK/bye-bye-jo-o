@@ -90,7 +90,7 @@ const DATA: { [key: string]: PageData} = {
     expectedAnswer: '8888',
     media: poolTable,
     mediaType: 'image',
-    memory: '',
+    memory: "It's 13:34, is that home time, or pool time",
   },
   'Page9': {
     clue: 'Getting hungry? Time for a snack!',
@@ -98,7 +98,7 @@ const DATA: { [key: string]: PageData} = {
     expectedAnswer: 'nuts',
     media: thatsAChoppin,
     mediaType: 'image',
-    memory: '',
+    memory: 'deez nuts',
   },
   'Page10': {
     clue: "We've gotten a bit dirty... time to clean up",
@@ -264,7 +264,7 @@ function LastPage() {
     <div className="flex flex-col items-center mt-8">
       <h1 className="text-2xl font-bold mb-8">That was the last rabbit!</h1>
       <div className="flex flex-col items-center gap-4 text-base text-center ml-8">
-        <p>But the game is far from over!</p>
+        <p>But the game is far from over...</p>
         <img alt={evilBunny} src={evilBunny} className="h-64 w-64"></img>
       </div>
     </div>
@@ -289,11 +289,10 @@ function initialAnswersState(answered: string[] = []): {[key: string]: string} {
 function App() {
   const [answered, setAnswered] = useStickyState([], 'answered');
   const [pageAnswers, setPageAnswers] = useState(initialAnswersState(answered));
-  const [currentPage, setCurrentPage] = useState('intro');
+  const numAnswered = answered.length;
+  const [currentPage, setCurrentPage] = useState(numAnswered > 0 ? answered[numAnswered-1] : 'intro');
 
-  const allAnswered = answered.includes('Page1') && 
-    answered.includes('Page2');
-  
+  const allAnswered = new Set(answered).size === 10; 
   const pages = Array.from({ length: 10 }, (_, i) => `Page${i + 1}`);
 
 
