@@ -216,7 +216,7 @@ function DumbPage({ clue, media, mediaType, memory, answer, answered, onAnswer, 
             ></img>
           )}
           {mediaType ==='video' && (
-            <video className="w-64" controls autoPlay loop muted>
+            <video className="w-64" controls autoPlay>
             <source src={media} type="video/mp4"></source>
           </video>
           )}
