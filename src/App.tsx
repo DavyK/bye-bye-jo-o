@@ -344,10 +344,10 @@ function App() {
               setCurrentPage('last');
             }
           }}
-          answer={pageAnswers[currentPage]}
+          answer={pageAnswers[currentPage].toLowerCase()}
           onAnswer={(answer: string) => {
-            setPageAnswers(Object.assign({}, pageAnswers, { [currentPage]: answer }));
-            if (answer === DATA[currentPage].expectedAnswer) {
+            setPageAnswers(Object.assign({}, pageAnswers, { [currentPage]: answer.toLowerCase() }));
+            if (answer.toLowerCase() === DATA[currentPage].expectedAnswer.toLowerCase()) {
               setAnswered([...answered, currentPage]);
             }
           }}
