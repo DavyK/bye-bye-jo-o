@@ -10,6 +10,7 @@ import washingUp from './media/washing-up.mov';
 import toilet from './media/toilet.jpg';
 import fashionShow from './media/fashionShow.mov';
 import ducks from './media/ducks.png';
+import meetingBall from './media/meeting-ball.mov';
 import evilBunny from './media/evil-bunny.jpg';
 import './App.css';
 
@@ -72,9 +73,9 @@ const DATA: { [key: string]: PageData} = {
     clue: "A spicy meeting is happening in redfern, let's listen in...",
     location: 'The wellness room',
     expectedAnswer: '0420',
-    media: '',
-    mediaType: 'image',
-    memory: '',
+    media: meetingBall,
+    mediaType: 'video',
+    memory: "Your favourite hole to throw your ball into",
   },
   'Page7': {
     clue: "I'm board... let's play a game",
